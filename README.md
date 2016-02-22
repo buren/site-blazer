@@ -22,8 +22,17 @@ $ cp .sample.env .env
 
 ## Usage
 
+__WEB__
+
+```
+$ npm start
+# Starts a server on http://localhost:5000
+```
+
+__CLI__
+
 You can invoke Site Blazer using the very simple CLI:
 
 ```
-$ npm start google.com example.com
+$ npm run cli google.com example.com
 ```

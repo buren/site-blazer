@@ -1,22 +1,42 @@
-var env = require('node-env-file');
+require('./lib/read-env')
 
-// Load all environment variables from .env file
-env(__dirname + '/.env');
+var AnalyzePages = require('./lib/analyze-pages');
 
-var PageSpeed = require('./lib/page-speed');
-var PsiToCSV = require('./lib/psi-to-csv');
-var OutputWriter = require('./lib/output-writer');
+var express = require('express');
+var app = express();
 
-var args = process.argv.slice(2);
+var bodyParser = require('body-parser')
 
-var analyzedPages = args.map(function(pageURL) {
-  return PageSpeed.run(pageURL);
+app.set('port', (process.env.PORT || 5000));
+
+app.use(express.static(__dirname + '/public'));
+
+// views is directory for all template files
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
+// Body parser
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
+
+app.get('/', function(request, response) {
+  response.render('pages/index');
 });
 
-Promise.all(analyzedPages).then(function (dataArray) {
-  PsiToCSV.run(dataArray).then(function(csv) {
-    OutputWriter.write('output/result.csv', csv);
+app.post('/analyze', urlencodedParser, function(request, response) {
+  if (!request.body) {
+    return response.sendStatus(400);
+  };
+
+  var analyzeURLs = function(urlListParam) {
+    return request.body.urlList.split('\n');
+  };
+
+  AnalyzePages.run(analyzeURLs()).then(function(csv) {
+    response.set('Content-Disposition', 'attachment;filename=result.csv');
+    response.send(new Buffer(csv));
   });
-}).catch(function(err) {
-  console.log('Error: ', err);
+});
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });

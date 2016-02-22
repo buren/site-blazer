@@ -36,3 +36,19 @@ You can invoke Site Blazer using the very simple CLI:
 ```
 $ npm run cli google.com example.com
 ```
+
+## Deploy
+
+__Deploy to existing instance__
+
+1. Make sure that you have the heroku git remote setup
+2. `git push heroku master`
+
+__Deploy new instance__
+
+This app is Heroku ready.
+
+```
+$ heroku create <any_name>
+$ git push herou master
+```

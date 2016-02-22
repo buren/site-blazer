@@ -1,6 +1,6 @@
 # Site Blazer
 
-Track web pages speed index.
+Make sure that your site isn't shite.
 
 ## Getting started
 

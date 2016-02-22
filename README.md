@@ -2,6 +2,8 @@
 
 Make sure that your site isn't shite.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Getting started
 
 ```

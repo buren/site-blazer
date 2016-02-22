@@ -24,7 +24,6 @@
   "dependencies": {
     "json2csv": "^3.2.0",
     "node-env-file": "^0.1.8",
-    "pinkie-promise": "^2.0.0",
     "psi": "^2.0.2"
   }
 }

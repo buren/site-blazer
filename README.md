@@ -25,5 +25,5 @@ $ cp .sample.env .env
 You can invoke Site Blazer using the very simple CLI:
 
 ```
-$ npm start google.com
+$ npm start google.com example.com
 ```

@@ -1,0 +1,19 @@
+{
+  "name": "site-blazer",
+  "description": "Make sure that your site isn't shite.",
+  "scripts": {
+  },
+  "env": {
+    "GOOGLE_PAGE_INSIGHTS_API_KEY": {
+      "required": true
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "urn:buildpack:heroku/nodejs"
+    }
+  ]
+}

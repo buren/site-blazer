@@ -50,5 +50,5 @@ This app is Heroku ready.
 
 ```
 $ heroku create <any_name>
-$ git push herou master
+$ git push heroku master
 ```

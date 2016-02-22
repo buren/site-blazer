@@ -1,0 +1,368 @@
+{
+  "kind": "pagespeedonline#result",
+  "id": "https://www.google.se/?gfe_rd=cr&ei=e9rKVtqeOoOPoAfbmoGoDQ&gws_rd=ssl",
+  "responseCode": 200,
+  "title": "Google",
+  "ruleGroups": {
+    "SPEED": {
+      "score": 64
+    },
+    "USABILITY": {
+      "score": 100
+    }
+  },
+  "pageStats": {
+    "numberResources": 19,
+    "numberHosts": 6,
+    "totalRequestBytes": "3518",
+    "numberStaticResources": 10,
+    "htmlResponseBytes": "77597",
+    "cssResponseBytes": "16050",
+    "imageResponseBytes": "111443",
+    "javascriptResponseBytes": "454944",
+    "otherResponseBytes": "57053",
+    "numberJsResources": 3,
+    "numberCssResources": 2
+  },
+  "formattedResults": {
+    "locale": "en_US",
+    "ruleResults": {
+      "AvoidInterstitials": {
+        "localizedRuleName": "Avoid app install interstitials that hide content",
+        "ruleImpact": 0,
+        "groups": ["USABILITY"],
+        "summary": {
+          "format": "Your page does not appear to have any app install interstitials that hide a significant amount of content. Learn more about the importance of {{BEGIN_LINK}}avoiding the use of app install interstitials{{END_LINK}}.",
+          "args": [{
+            "type": "HYPERLINK",
+            "key": "LINK",
+            "value": "https://developers.google.com/webmasters/mobile-sites/mobile-seo/common-mistakes/avoid-interstitials"
+          }]
+        }
+      },
+      "AvoidLandingPageRedirects": {
+        "localizedRuleName": "Avoid landing page redirects",
+        "ruleImpact": 25.5,
+        "groups": ["SPEED"],
+        "summary": {
+          "format": "Your page has {{NUM_REDIRECTS}} redirects. Redirects introduce additional delays before the page can be loaded.",
+          "args": [{
+            "type": "INT_LITERAL",
+            "key": "NUM_REDIRECTS",
+            "value": "2"
+          }]
+        },
+        "urlBlocks": [{
+          "header": {
+            "format": "{{BEGIN_LINK}}Avoid landing page redirects{{END_LINK}} for the following chain of redirected URLs.",
+            "args": [{
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/AvoidRedirects"
+            }]
+          },
+          "urls": [{
+            "result": {
+              "format": "{{FIRST_URL}}",
+              "args": [{
+                "type": "URL",
+                "key": "FIRST_URL",
+                "value": "http://google.com/"
+              }]
+            }
+          }, {
+            "result": {
+              "format": "{{REDIRECTED_URL}}",
+              "args": [{
+                "type": "URL",
+                "key": "REDIRECTED_URL",
+                "value": "http://www.google.se/?gfe_rd=cr&ei=e9rKVtqeOoOPoAfbmoGoDQ"
+              }]
+            }
+          }, {
+            "result": {
+              "format": "{{REDIRECTED_URL}}",
+              "args": [{
+                "type": "URL",
+                "key": "REDIRECTED_URL",
+                "value": "https://www.google.se/?gfe_rd=cr&ei=e9rKVtqeOoOPoAfbmoGoDQ&gws_rd=ssl"
+              }]
+            }
+          }]
+        }]
+      },
+      "AvoidPlugins": {
+        "localizedRuleName": "Avoid plugins",
+        "ruleImpact": 0,
+        "groups": ["USABILITY"],
+        "summary": {
+          "format": "Your page does not appear to use plugins, which would prevent content from being usable on many platforms. Learn more about the importance of {{BEGIN_LINK}}avoiding plugins{{END_LINK}}.",
+          "args": [{
+            "type": "HYPERLINK",
+            "key": "LINK",
+            "value": "https://developers.google.com/speed/docs/insights/AvoidPlugins"
+          }]
+        }
+      },
+      "ConfigureViewport": {
+        "localizedRuleName": "Configure the viewport",
+        "ruleImpact": 0,
+        "groups": ["USABILITY"],
+        "summary": {
+          "format": "Your page specifies a viewport matching the device's size, which allows it to render properly on all devices. Learn more about {{BEGIN_LINK}}configuring viewports{{END_LINK}}.",
+          "args": [{
+            "type": "HYPERLINK",
+            "key": "LINK",
+            "value": "https://developers.google.com/speed/docs/insights/ConfigureViewport"
+          }]
+        }
+      },
+      "EnableGzipCompression": {
+        "localizedRuleName": "Enable compression",
+        "ruleImpact": 0,
+        "groups": ["SPEED"],
+        "summary": {
+          "format": "You have compression enabled. Learn more about {{BEGIN_LINK}}enabling compression{{END_LINK}}.",
+          "args": [{
+            "type": "HYPERLINK",
+            "key": "LINK",
+            "value": "https://developers.google.com/speed/docs/insights/EnableCompression"
+          }]
+        }
+      },
+      "LeverageBrowserCaching": {
+        "localizedRuleName": "Leverage browser caching",
+        "ruleImpact": 0,
+        "groups": ["SPEED"],
+        "summary": {
+          "format": "You have enabled browser caching. Learn more about {{BEGIN_LINK}}browser caching recommendations{{END_LINK}}.",
+          "args": [{
+            "type": "HYPERLINK",
+            "key": "LINK",
+            "value": "https://developers.google.com/speed/docs/insights/LeverageBrowserCaching"
+          }]
+        }
+      },
+      "MainResourceServerResponseTime": {
+        "localizedRuleName": "Reduce server response time",
+        "ruleImpact": 0,
+        "groups": ["SPEED"],
+        "summary": {
+          "format": "Your server responded quickly. Learn more about {{BEGIN_LINK}}server response time optimization{{END_LINK}}.",
+          "args": [{
+            "type": "HYPERLINK",
+            "key": "LINK",
+            "value": "https://developers.google.com/speed/docs/insights/Server"
+          }]
+        }
+      },
+      "MinifyCss": {
+        "localizedRuleName": "Minify CSS",
+        "ruleImpact": 0,
+        "groups": ["SPEED"],
+        "summary": {
+          "format": "Your CSS is minified. Learn more about {{BEGIN_LINK}}minifying CSS{{END_LINK}}.",
+          "args": [{
+            "type": "HYPERLINK",
+            "key": "LINK",
+            "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+          }]
+        }
+      },
+      "MinifyHTML": {
+        "localizedRuleName": "Minify HTML",
+        "ruleImpact": 0,
+        "groups": ["SPEED"],
+        "summary": {
+          "format": "Your HTML is minified. Learn more about {{BEGIN_LINK}}minifying HTML{{END_LINK}}.",
+          "args": [{
+            "type": "HYPERLINK",
+            "key": "LINK",
+            "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+          }]
+        }
+      },
+      "MinifyJavaScript": {
+        "localizedRuleName": "Minify JavaScript",
+        "ruleImpact": 0.1563,
+        "groups": ["SPEED"],
+        "summary": {
+          "format": "Compacting JavaScript code can save many bytes of data and speed up downloading, parsing, and execution time."
+        },
+        "urlBlocks": [{
+          "header": {
+            "format": "{{BEGIN_LINK}}Minify JavaScript{{END_LINK}} for the following resources to reduce their size by {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+            "args": [{
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/MinifyResources"
+            }, {
+              "type": "BYTES",
+              "key": "SIZE_IN_BYTES",
+              "value": "1.1KiB"
+            }, {
+              "type": "PERCENTAGE",
+              "key": "PERCENTAGE",
+              "value": "2%"
+            }]
+          },
+          "urls": [{
+            "result": {
+              "format": "Minifying {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction) after compression.",
+              "args": [{
+                "type": "URL",
+                "key": "URL",
+                "value": "https://www.google.se/xjs/_/js/k=xjs.s.sv.qnWJZZetxFk.O/m=sx,c,sb_mob,bct,cdos,elog,jsa,mbsf,r,hsm,qsm,d,csi/am=gLJMIAXwnSljIiGPCUJABQoE/rt=j/d=1/t=zcms/rs=ACT90oGxizWOoaTeJvH9utgKlGC68gNtAA"
+              }, {
+                "type": "BYTES",
+                "key": "SIZE_IN_BYTES",
+                "value": "1.1KiB"
+              }, {
+                "type": "PERCENTAGE",
+                "key": "PERCENTAGE",
+                "value": "2%"
+              }]
+            }
+          }]
+        }]
+      },
+      "MinimizeRenderBlockingResources": {
+        "localizedRuleName": "Eliminate render-blocking JavaScript and CSS in above-the-fold content",
+        "ruleImpact": 32,
+        "groups": ["SPEED"],
+        "summary": {
+          "format": "Your page has {{NUM_CSS}} blocking CSS resources. This causes a delay in rendering your page.",
+          "args": [{
+            "type": "INT_LITERAL",
+            "key": "NUM_CSS",
+            "value": "1"
+          }]
+        },
+        "urlBlocks": [{
+          "header": {
+            "format": "None of the above-the-fold content on your page could be rendered without waiting for the following resources to load. Try to defer or asynchronously load blocking resources, or inline the critical portions of those resources directly in the HTML."
+          }
+        }, {
+          "header": {
+            "format": "{{BEGIN_LINK}}Optimize CSS Delivery{{END_LINK}} of the following:",
+            "args": [{
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery"
+            }]
+          },
+          "urls": [{
+            "result": {
+              "format": "{{URL}}",
+              "args": [{
+                "type": "URL",
+                "key": "URL",
+                "value": "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+              }]
+            }
+          }]
+        }]
+      },
+      "OptimizeImages": {
+        "localizedRuleName": "Optimize images",
+        "ruleImpact": 0.1774,
+        "groups": ["SPEED"],
+        "summary": {
+          "format": "Properly formatting and compressing images can save many bytes of data."
+        },
+        "urlBlocks": [{
+          "header": {
+            "format": "{{BEGIN_LINK}}Optimize the following images{{END_LINK}} to reduce their size by {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+            "args": [{
+              "type": "HYPERLINK",
+              "key": "LINK",
+              "value": "https://developers.google.com/speed/docs/insights/OptimizeImages"
+            }, {
+              "type": "BYTES",
+              "key": "SIZE_IN_BYTES",
+              "value": "1.7KiB"
+            }, {
+              "type": "PERCENTAGE",
+              "key": "PERCENTAGE",
+              "value": "9%"
+            }]
+          },
+          "urls": [{
+            "result": {
+              "format": "Losslessly compressing {{URL}} could save {{SIZE_IN_BYTES}} ({{PERCENTAGE}} reduction).",
+              "args": [{
+                "type": "URL",
+                "key": "URL",
+                "value": "https://www.google.se/images/nav_logo242.png"
+              }, {
+                "type": "BYTES",
+                "key": "SIZE_IN_BYTES",
+                "value": "1.7KiB"
+              }, {
+                "type": "PERCENTAGE",
+                "key": "PERCENTAGE",
+                "value": "9%"
+              }]
+            }
+          }]
+        }]
+      },
+      "PrioritizeVisibleContent": {
+        "localizedRuleName": "Prioritize visible content",
+        "ruleImpact": 0,
+        "groups": ["SPEED"],
+        "summary": {
+          "format": "You have the above-the-fold content properly prioritized. Learn more about {{BEGIN_LINK}}prioritizing visible content{{END_LINK}}.",
+          "args": [{
+            "type": "HYPERLINK",
+            "key": "LINK",
+            "value": "https://developers.google.com/speed/docs/insights/PrioritizeVisibleContent"
+          }]
+        }
+      },
+      "SizeContentToViewport": {
+        "localizedRuleName": "Size content to viewport",
+        "ruleImpact": 0,
+        "groups": ["USABILITY"],
+        "summary": {
+          "format": "The contents of your page fit within the viewport. Learn more about {{BEGIN_LINK}}sizing content to the viewport{{END_LINK}}.",
+          "args": [{
+            "type": "HYPERLINK",
+            "key": "LINK",
+            "value": "https://developers.google.com/speed/docs/insights/SizeContentToViewport"
+          }]
+        }
+      },
+      "SizeTapTargetsAppropriately": {
+        "localizedRuleName": "Size tap targets appropriately",
+        "ruleImpact": 0,
+        "groups": ["USABILITY"],
+        "summary": {
+          "format": "All of your page's links/buttons are large enough for a user to easily tap on a touchscreen. Learn more about {{BEGIN_LINK}}sizing tap targets appropriately{{END_LINK}}.",
+          "args": [{
+            "type": "HYPERLINK",
+            "key": "LINK",
+            "value": "https://developers.google.com/speed/docs/insights/SizeTapTargetsAppropriately"
+          }]
+        }
+      },
+      "UseLegibleFontSizes": {
+        "localizedRuleName": "Use legible font sizes",
+        "ruleImpact": 0,
+        "groups": ["USABILITY"],
+        "summary": {
+          "format": "The text on your page is legible. Learn more about {{BEGIN_LINK}}using legible font sizes{{END_LINK}}.",
+          "args": [{
+            "type": "HYPERLINK",
+            "key": "LINK",
+            "value": "https://developers.google.com/speed/docs/insights/UseLegibleFontSizes"
+          }]
+        }
+      }
+    }
+  },
+  "version": {
+    "major": 1,
+    "minor": 15
+  }
+}

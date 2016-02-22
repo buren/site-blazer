@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Site Blazer</h1>
+    <p>Make sure that your site isn't shite.</p>
+    <a type="button" class="btn btn-lg btn-default" href="https://github.com/young-skilled/site-blazer"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h3>How this sample app works</h3>
+      <div class="alert alert-warning" role="alert">
+        <p>
+          <span class="glyphicon glyphicon-info-sign"></span>
+          <strong>Don't post to many URLs</strong>, since the app isn't very smart and will need to process all URLs before sending you a response.
+        </p>
+      </div>
+
+      <form id="analyze-form" action="/analyze" method="post">
+
+        <div class="form-group">
+          <label for="urlList">URLs</label>
+          <textarea name="urlList" rows="8" cols="40" class="form-control" placeholder="One URL per line.."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <div class="analyze-form-submit-notice">
+          <hr>
+          <div class="alert alert-info">
+            <p>
+              <span class="glyphicon glyphicon-info-sign"></span>
+              <strong>Analyzing..</strong>
+              This may take a while...
+            </p>
+            <p>
+              A file will be downloaded when its finshed, <strong>please don't reload the page..</strong>
+            </p>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </div> <!-- row -->
+</div>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-require('./lib/read-env')
+require('./lib/read-env');
 
 var OutputWriter = require('./lib/output-writer');
 var AnalyzePages = require('./lib/analyze-pages');

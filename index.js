@@ -1,4 +1,4 @@
-require('./lib/read-env')
+require('./lib/read-env');
 
 var AnalyzePages = require('./lib/analyze-pages');
 

@@ -20,8 +20,22 @@
       <div class="alert alert-warning" role="alert">
         <p>
           <span class="glyphicon glyphicon-info-sign"></span>
-          <strong>Don't post to many URLs</strong>, since the app isn't very smart and will need to process all URLs before sending you a response.
+          <strong>Don't post to many URLs</strong>, since the app isn't very smart and will need to process all URLs before sending you a response. It will kill the proccess after 30sec.
         </p>
+      </div>
+
+      <div class="analyze-form-submit-notice">
+        <hr>
+        <div class="alert alert-info">
+          <p>
+            <span class="glyphicon glyphicon-info-sign"></span>
+            <strong>Analyzing..</strong>
+            This may take a while...
+          </p>
+          <p>
+            A file will be downloaded when its finshed, <strong>please don't reload the page..</strong>
+          </p>
+        </div>
       </div>
 
       <form id="analyze-form" action="/analyze" method="post">
@@ -32,20 +46,6 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
-
-        <div class="analyze-form-submit-notice">
-          <hr>
-          <div class="alert alert-info">
-            <p>
-              <span class="glyphicon glyphicon-info-sign"></span>
-              <strong>Analyzing..</strong>
-              This may take a while...
-            </p>
-            <p>
-              A file will be downloaded when its finshed, <strong>please don't reload the page..</strong>
-            </p>
-          </div>
-        </div>
 
       </form>
 
